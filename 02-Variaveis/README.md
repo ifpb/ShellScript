@@ -11,9 +11,9 @@
     * echo $teste
     
 * Variáveis do Sistema:
-    echo ${PATH}
-    echo ${HOME}
-    echo ${SHELL}
+    * echo ${PATH}
+    * echo ${HOME}
+    * echo ${SHELL}
     
 * Variáveis definidas pelo bash:
     * $1 $2 $3 $4 $5 $6 $7 ...
