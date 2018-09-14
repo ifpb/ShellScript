@@ -18,3 +18,5 @@ echo $aaaa
 O que é impresso na tela após a execução do script teste.sh?
 
 Como fazer para que, usando as variáveis 'a' e 'aa',  o script imprima 'BrasilBrasileiro' (sem espaços) na tela?
+
+Como fazer para que, usando as variáveis 'a' e 'aa',  o script imprima 'BrasilaBrasileiroa' (sem espaços) na tela?
