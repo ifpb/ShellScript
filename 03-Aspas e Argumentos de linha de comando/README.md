@@ -18,18 +18,18 @@
 * Aspas simples ('):
     * Todos os caracteres entre aspas simples são tratados de forma literal.
     * Útil para passar um programa como parâmetro para um comando: por exemplo sed e awk
-        * sed 's/a/b/g'
-        * awp 'print $1 $2'
+        * sed 's/a/b/g' < entrada.txt
+        * awk 'print $1 $2' < entrada.txt
     * Também é útil para imprimir caracteres especiais:
         * echo '$$' é um caractere especial, '\\' também
 
 
 * Aspas duplas ("):
     * Todos os caracteres entre aspas simples são tratados de forma literal.
-    * Exceto '$', '\' e '`'
+    * Exceto '$', '\\' e '`'
     * Útil para preservar espaços em branco, mas executando substituições de variáveis
         * echo "Segue o path: ${PATH}"
-    * Também para rpeservar espaços quando atribuindo valores às variáveis
+    * Também para preservar espaços quando atribuindo valores às variáveis
         * A="Meu nome é XUAUM"
 
     

@@ -11,5 +11,5 @@ echo ${PATH}
 echo -e "\nDiretório atual de trabalho:\n"
 echo ${PWD}
 
-echo -e "\nTesmpo de execução deste script:\n"
+echo -e "\nTempo de execução deste script:\n"
 echo ${SECONDS}

@@ -11,4 +11,5 @@ c=$a$b
 d=$a$b$c
 echo ${d}
 ```
+Explique a execução de cada linha do script.
 

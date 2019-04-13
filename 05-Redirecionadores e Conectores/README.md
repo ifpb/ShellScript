@@ -28,7 +28,8 @@
     * <<<
         * Segue uma string
         * Permite redirionar a entrada padrão do comando para a string escrita no bash
-        * O equivalente de echo "teste" | grep t, grep t <<"teste"
+        * Equivalente a executar: echo "teste" | grep t
+        * Seria executar: grep t <<<"teste"
         
 
 

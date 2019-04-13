@@ -13,6 +13,7 @@
         * date '+%a, %d.%m.%Y'
             * Saída: Ter, 25.09.2018
         * date "+%H:%M"
+            * Saída: 19:07
         * date "+%s"
             * Saída: 1537882750
             * Significa o número de segundos desde 01-01-1970 00:00:00 UTC
@@ -29,9 +30,9 @@
             * Em seguida, o shell substitui $(date +%d.%m.%y) por 26.09.18 na linha original
             * Esta se torna: echo "A data de hoje é 26.09.18"
             * E a saída do comando é: "A data de hoje é 26.09.18"
-        * DIA="$(data +%d)"
-        * MES="$(data +%m)"
-        * ANO="$(data +%Y)"
+        * DIA="$(date +%d)"
+        * MES="$(date +%m)"
+        * ANO="$(date +%Y)"
         * echo "Estamos no dia ${DIA} de ${MES} do ano de ${ANO}."
         * ARQUIVOS="$(ls)"
     
