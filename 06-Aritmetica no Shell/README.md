@@ -16,7 +16,7 @@ Neste curso, vamos focar duas delas: $(()) e bc.
 
 * bc
     * Por sua vez, o comando bc permite a realização de aritmética de ponto flutuante. É necessária a instalação do pacote bc.
-        * echo "7 / 3 | bc"
+        * echo "7 / 3" | bc
     * Observe que é necessário informar o número de casas após a vírgula.
         * echo "scale=2; 7 / 3" | bc
     * Também é possível fazer transforação de base.
@@ -29,7 +29,7 @@ Neste curso, vamos focar duas delas: $(()) e bc.
 
         * bc <<< "scale=2; 7 / 3" 
 
-    * Como o bc é um comando, variáveis devem sempre utilizar o $. A atribuição do retultado deve utilizar substituição de shell.
+    * Como o bc é um comando, variáveis devem sempre utilizar o $. A atribuição do resultado deve utilizar substituição de shell.
 
         * x=$( bc <<< "scale=2; $a / $b" )
 
