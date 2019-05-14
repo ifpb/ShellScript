@@ -9,6 +9,7 @@
     * test -d /home/user && echo usuario existe
     * [ ${a} -gt ${b} -a ${b} -gt ${c} ] && echo OK
 
+
 ### Teste de condições aritméticas com ((  )):
 
 * Tal qual a substituição aritmética, permite o teste de condições com números inteiros:
@@ -59,9 +60,43 @@
     * -f significa teste se o arquivo existe e é um arquivo comum
         * test -f /tmp/p.lock
 
-* O comando test pode ser utilizado de forma abreviada como [ EXPRESSÂO ]:
+* O comando test pode ser utilizado de forma abreviada como [ EXPRESSÃO ]:
     * [ -d /home ]
     * [ 12 -gt 10 ]
     * [ "a" == "a" ]
     * [ "${x}" != "${y}" ]
     * [ -z "${x}" ]
+    
+* Adicionalmente, várias condições podem ser conectadas por -a ( um AND, equivalente ao && ):
+    * [ -n "${x}" -a ${x} -gt 0 ] && echo "Existe e é maior que zero"
+    * [ -n "${x}" ] && [ ${x} -gt 0 ] && echo "Existe e é maior que zero"
+    
+* Adicionalmente, várias condições podem ser conectadas por -o ( um OR, equivalente ao || ):
+    * [ "${a}" -gt "${b}" -o "${a}" -gt "${c}" ] && echo '$a maior que $b ou $a maior que $c'
+    * [ "${a}" -gt "${b}" ] || [ "${a}" -gt "${c}" ] && echo '$a maior que $b ou $a maior que $c'
+    
+* Adicionalmente, a condição pode ser negada usando uma exclamação '!':
+    * [ ! -d /home ]
+    * [ ! -z "${x}" ]
+
+
+### Teste de condições aritméticas para números reais (usando bc):
+    
+* Por padrão, o bash não disponibiliza testes de condições para números reais.
+
+* É necessário, então, utilizar comandos externos (bc ou awk, por exemplo) através da substituição de shell.
+
+* Caso um teste dê verdadeiro, o bc imprime "1" na tela, caso dê falso imprime "0":
+    * bc <<<"3.1 > 3"
+    * bc <<<"3.1 < 3"
+
+* Desta forma, usando substituição de shell, o retorno do comando bc deve ser testado usando test ou (( )):
+    * x=$(bc <<<"3.1 > 3"); (( ${x} == 1 )) && echo OK
+    * x=$(bc <<<"3.1 > 3"); (( ${x} == 0 )) && echo FALHOU
+    * x=$(bc <<<"3.1 > 3"); test "${x}" -eq 0 && echo FALHOU
+    * x=$(bc <<<"3.1 > 3"); [ ${x} -eq 1 ] && echo OK
+
+* Ou, de forma direta (sem usar a variável $x):
+    * (( $(bc <<<"3.1 > 3") == 1 )) && echo OK
+    * [ $(bc <<<"3.1 > 3") -eq 1 ] || echo FALHOU    
+
