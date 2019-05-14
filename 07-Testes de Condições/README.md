@@ -9,22 +9,25 @@
     * test -d /home/user && echo usuario existe
     * [ ${a} -gt ${b} -a ${b} -gt ${c} ] && echo OK
 
-* Teste de condições aritméticas com ((  )):
-    * Tal qual a substituição aritmética, permite o teste de condições com números inteiros:
-        * (( 10 > 11 ))
-        * (( 2*4 <= 12 ))
-        * (( 3**2 == 3*3 ))
-        * (( 27 % 2 == 12 - 10 ))
-        * (( "${#}" == 4 ))
-        * (( "${a}" > "${b}" ))
-    * Podem ser ligadas utilizando conectores:
-        * (( 25 % 2 == 0 )) && echo "par"
-        * (( 31 % 2 == 0 )) || echo "impar"
-        * (( "${a}" > "${b}" )) && (( "${b}" > "${c}" )) && echo 'a > b > c'
+### Teste de condições aritméticas com ((  )):
+
+* Tal qual a substituição aritmética, permite o teste de condições com números inteiros:
+    * (( 10 > 11 ))
+    * (( 2*4 <= 12 ))
+    * (( 3**2 == 3*3 ))
+    * (( 27 % 2 == 12 - 10 ))
+    * (( "${#}" == 4 ))
+    * (( "${a}" > "${b}" ))
+
+* Exemplos utilizando conectores:
+    * (( 25 % 2 == 0 )) && echo "par"
+    * (( 31 % 2 == 0 )) || echo "impar"
+    * (( "${a}" > "${b}" )) && (( "${b}" > "${c}" )) && echo 'a > b > c'
 
 
-* Teste de condições com o comando test:
-    * O comando test permite a verificação de condições relativas a números inteiros:
+### Teste de condições com o comando test:
+
+* O comando test permite a verificação de condições relativas a números inteiros:
     * -gt significa maior que
         * test 12 -gt 10
     * -ge significa maior ou igual que
@@ -38,7 +41,7 @@
     * -ne significa não igual (ou diferente)
         * test 31 -eq 11
 
-    * O comando test permite a verificação de condições relativas a strings:
+* O comando test permite a verificação de condições relativas a strings:
     * == significa strings iguais
         * test a == a
     * != significa strings diferentes
@@ -48,7 +51,7 @@
     * -n significa teste se a string é não vazia
         * x="umdoistres"; test -n "$x"
 
-    * O comando test permite a verificação de condições relativas a arquivos:
+* O comando test permite a verificação de condições relativas a arquivos:
     * -d significa teste se o arquivo existe e é um diretório
         * test -d /home
     * -e significa teste se o arquivo existe
@@ -56,3 +59,9 @@
     * -f significa teste se o arquivo existe e é um arquivo comum
         * test -f /tmp/p.lock
 
+* O comando test pode ser utilizado de forma abreviada como [ EXPRESSÂO ]:
+    * [ -d /home ]
+    * [ 12 -gt 10 ]
+    * [ "a" == "a" ]
+    * [ "${x}" != "${y}" ]
+    * [ -z "${x}" ]
