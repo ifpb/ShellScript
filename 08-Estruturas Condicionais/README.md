@@ -95,5 +95,30 @@ case $t in
     q) echo "Saindo..." ;;
     *) echo "Não reconheço a tecla digitada..." ;;
 esac
+```
 
+* Usando o '|' como ou:
+
+```bash
+read -p "digite uma tecla: " t
+
+case $t in
+      1) echo "Você Digitou a tecla 1" ;;
+      2) echo "Você Digitou a tecla 2" ;;
+      3) echo "Você Digitou a tecla 3" ;;
+    q|Q) echo "Saindo..." ;;
+      *) echo "Não reconheço a tecla digitada..." ;;
+esac
+```
+
+* Usando o '[' e ']' para agrupar condições:
+
+```bash
+read -p "digite uma tecla: " t
+
+case $t in
+    [123]) echo "Você Digitou a tecla $1" ;;
+      q|Q) echo "Saindo..." ;;
+        *) echo "Não reconheço a tecla digitada..." ;;
+esac
 ```
