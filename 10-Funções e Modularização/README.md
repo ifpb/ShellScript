@@ -1,8 +1,8 @@
 # Funções e Modularização
 
-* O os scripts shell possibilitam a definição de funções. Desta forma, o código pode ficar mais organizado, legível e menos repetitivo, sendo menos propenso à falhas e mais fácil de ser mantido.
+* O os scripts shell possibilitam a definição de funções. Desta forma, o código pode ficar mais organizado, legível e menos repetitivo, sendo menos propenso a falhas e mais fácil de ser mantido.
 
-* Uma vez definida, ua função se torna um comando interno para o shell atual.
+* Uma vez definida, uma função se torna um comando interno para o shell atual.
 
 
 ```bash
@@ -13,6 +13,12 @@ function ola() {
 function linha() {
     echo '----------------------------'
 }
+
+linha
+linha
+ola
+linha
+linha
 
 ```
 
@@ -98,6 +104,6 @@ function xyz() {
 
 source f.sh  # Importa o script f.sh (executa-o aqui, linha por linha)
 
-function xyz
+xyz
 
 ```
