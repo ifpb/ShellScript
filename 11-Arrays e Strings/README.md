@@ -149,6 +149,3 @@ echo ${texto:3:10}
 echo ${texto:3:11}
 echo ${texto:3:15}
 ```
-
-
-

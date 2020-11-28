@@ -6,7 +6,7 @@
 
 * Desta forma, o teste pode ser verificado, por exemplo, usando os conectores || e &&:
     * (( 10 > 11 )) || exit 0
-    * test -d /home/user && echo usuario existe
+    * test -d /home/user && echo 'usuario existe'
     * [ ${a} -gt ${b} -a ${b} -gt ${c} ] && echo OK
 
 

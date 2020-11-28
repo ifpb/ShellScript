@@ -2,7 +2,7 @@
 
 * Scripts são arquivos texto
 * Precisam de permissão de escrita e execução
-* Cabeçalho !#/bin/bash
+* Cabeçalho #!/bin/bash
 
 # Comandos Básicos
 
