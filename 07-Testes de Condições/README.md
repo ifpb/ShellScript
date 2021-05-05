@@ -38,9 +38,9 @@
     * -le significa menor ou igual que
         * test ${1} -le ${2}    
     * -eq significa igual a
-        * test 22 -lt 22    
+        * test 22 -eq 22    
     * -ne significa não igual (ou diferente)
-        * test 31 -eq 11
+        * test 31 -ne 11
 
 * O comando test permite a verificação de condições relativas a strings:
     * == significa strings iguais
