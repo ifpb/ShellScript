@@ -25,7 +25,7 @@
 
 
 * Aspas duplas ("):
-    * Todos os caracteres entre aspas simples são tratados de forma literal.
+    * Todos os caracteres entre aspas duplas são tratados de forma literal.
     * Exceto '$', '\\' e '`'
     * Útil para preservar espaços em branco, mas executando substituições de variáveis
         * echo "Segue o path: ${PATH}"
