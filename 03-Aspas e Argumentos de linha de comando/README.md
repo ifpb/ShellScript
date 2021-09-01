@@ -38,3 +38,5 @@
     * $* (Todos os argumentos de linha de comando)
     * $0 (Comando executado)
     * $# (Número de argumentos passados pela linha de comando)
+    * $$ (Número do processo em execução)
+    * $! (Número do último comando executado)
