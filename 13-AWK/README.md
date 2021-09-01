@@ -56,8 +56,8 @@
   * O arquivo pode ser feito utilizando o "BEGIN" e o "END" que são comandos utilizados 'antes' de processar e 'depois' de processar o arquivo.
 
 ### Exemplo:
-        BEGIN { comandos executados antes de iniciar a leitura do arquivo }
-        {
+	BEGIN { comandos executados antes de iniciar a leitura do arquivo }
+	{
 	        condições a serem executadas em cada linha do arquivo
 	}
-        END { comandos a serem executados após a leitura do arquivo }
+	END { comandos a serem executados após a leitura do arquivo }
