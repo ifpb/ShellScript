@@ -1,4 +1,4 @@
- ### AWK
+ # AWK
 
 * Descrição
    * AWK é uma linguagem de programação que permite a manipulação de textos levando em consideração uma sequência de padrões.
