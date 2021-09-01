@@ -16,11 +16,11 @@
 
 
 * Regras do AWK
-   * 1-O AWK lê uma linha do arquivo por vez.
-   * 2-Para cada linha lida o AWK realiza as ações que foram informadas.
-   * 3-Caso não seja informado nenhum padrão o AWK não realizará nenhuma ação.
-   * 4-Caso não seja informada nenhuma ação o AWK realizará a sua ação padrão (print)
-   * 5-É possível realizar mais de uma ação separando cada uma delas por ponto e vírgula ";".
+   * O AWK lê uma linha do arquivo por vez.
+   * Para cada linha lida o AWK realiza as ações que foram informadas.
+   * Caso não seja informado nenhum padrão o AWK não realizará nenhuma ação.
+   * Caso não seja informada nenhuma ação o AWK realizará a sua ação padrão (print)
+   * É possível realizar mais de uma ação separando cada uma delas por ponto e vírgula ";".
 
 
 * Variáveis internas
@@ -49,15 +49,17 @@
 * Caso seja solicitado que apareça na tela apenas o nome das pessoas do arquivo, o comando usado será: 
   * awk 'NR>1{print $1}' entrada.txt
 
-  * Onde "NR>1" ignora a primeira linha, que neste caso é o cabeçalho (caso seja necessário), e $1 é o primeiro campo da linha que tem "espaço vazio" como parâmetro de separação.
+  * Onde "NR>1" ignora a primeira linha, que neste caso é o cabeçalho, e $1 é o primeiro campo da linha que tem "espaço vazio" como parâmetro de separação.
 
 * Arquivo AWK
   * Há também uma outra forma de realizar esse processamento que é criando um arquivo awk e inserindo nele os comandos necessários para realizar tal tarefa.
   * O arquivo pode ser feito utilizando o "BEGIN" e o "END" que são comandos utilizados 'antes' de processar e 'depois' de processar o arquivo.
 
 ### Exemplo:
-	BEGIN { comandos executados antes de iniciar a leitura do arquivo }
-	{
-	        condições a serem executadas em cada linha do arquivo
-	}
-	END { comandos a serem executados após a leitura do arquivo }
+``` awk
+BEGIN { "condições e comandos a serem executados antes de iniciar a leitura do arquivo" }
+{
+	"condições e comandos a serem executados em cada linha do arquivo"
+}
+END { "comandos a serem executados após a leitura do arquivo" }
+```
