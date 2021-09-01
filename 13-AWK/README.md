@@ -1,13 +1,13 @@
-###AWK
+ ### AWK
 
 * Descrição
    * AWK é uma linguagem de programação que permite a manipulação de textos levando em consideração uma sequência de padrões.
 
 * Opções de comando
-   * -f Especifica o nome do arquivo que possui os comandos que serão executados.
-   * -F Define o que será o separador de campos (O espaço é o padrão).
-   * -h Informa as opções (Ajuda).
-   * -v Informa a versão.
+   * -f: Especifica o nome do arquivo que possui os comandos que serão executados.
+   * -F: Define o que será o separador de campos (O espaço é o padrão).
+   * -h: Informa as opções (Ajuda).
+   * -v: Informa a versão.
 
 * Formato do comando
    * O comando awk é basicamente formado por: awk '/padrão/{ação}' "nomedoarquivo".
@@ -38,26 +38,26 @@
   * $1,$2,$3,$...: Campos da linha que está sendo processada.
 
 ### Exemplo:
-	 Suponhamos que há um arquivo de texto chamado "entrada.txt" e nesse arquivo temos o seguinte conteúdo:
-
- * Nome		Pontos
-   José		103
-   Andréia	50
-   Henrique	22
-   Júlia	150
+  * Suponhamos que há um arquivo de texto chamado "entrada.txt" e nesse arquivo temos o seguinte conteúdo:
+         
+        Nome            Pontos
+        José            103
+        Andréia         50
+        Henrique        22
+        Júlia           150
    
 * Caso seja solicitado que apareça na tela apenas o nome das pessoas do arquivo, o comando usado será: 
   * awk 'NR>1{print $1}' entrada.txt
 
-	Onde "NR>1" ignora a primeira linha, que neste caso é o cabeçalho (caso seja necessário), e $1 é o primeiro campo da linha que tem "espaço vazio" como parâmetro de separação.
+  * Onde "NR>1" ignora a primeira linha, que neste caso é o cabeçalho (caso seja necessário), e $1 é o primeiro campo da linha que tem "espaço vazio" como parâmetro de separação.
 
 * Arquivo AWK
   * Há também uma outra forma de realizar esse processamento que é criando um arquivo awk e inserindo nele os comandos necessários para realizar tal tarefa.
   * O arquivo pode ser feito utilizando o "BEGIN" e o "END" que são comandos utilizados 'antes' de processar e 'depois' de processar o arquivo.
 
 ### Exemplo:
-BEGIN { comandos executados antes de iniciar a leitura do arquivo }
-{
-	condições a serem executadas em cada linha do arquivo
-}
-END { comandos a serem executados após a leitura do arquivo }
+        BEGIN { comandos executados antes de iniciar a leitura do arquivo }
+        {
+	        condições a serem executadas em cada linha do arquivo
+                }
+        END { comandos a serem executados após a leitura do arquivo }
