@@ -59,5 +59,5 @@
         BEGIN { comandos executados antes de iniciar a leitura do arquivo }
         {
 	        condições a serem executadas em cada linha do arquivo
-                }
+	}
         END { comandos a serem executados após a leitura do arquivo }
