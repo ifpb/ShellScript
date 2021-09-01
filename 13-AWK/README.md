@@ -40,12 +40,12 @@
 ### Exemplo:
 	 Suponhamos que há um arquivo de texto chamado "entrada.txt" e nesse arquivo temos o seguinte conteúdo:
 
-NOME           PONTOS
-José            201
-Alice           57
-Andréia         303
-Henrique        62
-
+ * Nome		Pontos
+   José		103
+   Andréia	50
+   Henrique	22
+   Júlia	150
+   
 * Caso seja solicitado que apareça na tela apenas o nome das pessoas do arquivo, o comando usado será: 
   * awk 'NR>1{print $1}' entrada.txt
 
