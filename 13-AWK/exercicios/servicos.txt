@@ -1,0 +1,9 @@
+    Nome    ,          Dia            ,      Atividade
+José Ailton, Segunda - Terça e Quarta, Manutenção dos computadores
+Maria Joaquina da Silva, Quarta e Sexta-feira, Imprimir documentos
+Saulo de Tarso Oliveira, Quinta e Sábado, Checagem dos documentos
+Rebeca Sales da SIlva Santos, Terça e Quinta, Monitorar a rede
+João Quebec Souza, Domingo, Backup do Servidor
+Silvandro Ardones Costa, Segunda a Sexta, Verificar Conexão da rede
+Júlia Sobrinho, Quarta e Sexta, Criar planilhas no Excel
+Pietro Jackson Ferreira, Sábado, Distribuição dos Arquivos
