@@ -79,8 +79,8 @@
 ### Código de saída
 * O zenity gera códigos de saída de acordo com o clique do usuário, cada clique representa um código, são eles:
 
-  * Código de saída 0: O usuário clicou em "OK" ou "Fechar";
-  * Código de saída 1: O usuário clico em "Cancelar" ou usou a janela para fechar o diálogo;
+  * Código de saída 0: O usuário clicou em "OK";
+  * Código de saída 1: O usuário clicou em "Cancelar" ou usou a janela para fechar o diálogo;
   * Código de saída -1: Ocorreu um erro inesperado;
   * Código de saída 5: O diálogo foi fechado porque o tempo foi esgotado.
 
@@ -93,16 +93,16 @@
   * --timeout="tempo" (Especifica o tempo em segundos em que a caixa de diálogos será fechada)
 
 ## Exemplos
-* Os comandos do zenity podem ser executados na própria linha de comando, você pode utilizar isso para realizar os seus testes.
+* Os comandos do zenity podem ser executados na própria linha de comando, você pode utilizar isto para realizar os seus testes.
 
-* Para criar um formulário e adicionar o nome e o número de um determinado usuário basta utilizar o comando:
+* Para criar um formulário e adicionar o nome e o número de um determinado usuário como entrada, basta utilizar o comando:
 
   >zenity --forms --title="Novo usuário" --text="Adicione o nome e o número do novo usuário" --separator="," --add-entry="Nome" --add-entry="Número" 
 * Lembrando: Neste caso utilizamos o --separator="," para que a saída seja separada por vírgula, ou seja, a saída será: "Nome", "Número". Por padrão a saída é separada por "|".
 
 
 
-* Para criar uma lista onde o usuário poderá optar pelas opções, podemos usar o comando:
+* Para criar uma lista onde o usuário poderá escolher pelas opções mostradas, podemos usar o comando:
 
   >Zenity --list --title="Lista de dispositivos" --column="Dispositivos" --column="Marca" --separator="," --print-column="ALL" Celular Samsung Desktop Positivo Notebook Samsung
 
