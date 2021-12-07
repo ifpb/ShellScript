@@ -72,7 +72,7 @@
 * **--color-selection**
   * Possibilita a seleção de uma cor para o usuário.
   * Opções específicas:
-    * --color="Valor": Setar o valor da cor inicia;
+    * --color="Valor": Setar o valor da cor inicial;
     * --show-palette: Mostra o palette de cores para o usuário selecionar.
     * OBS: Será retornado o valor da cor em rgb.
 
