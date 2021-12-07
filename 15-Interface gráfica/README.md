@@ -21,10 +21,10 @@
 * **--file-selection**
   * Nessa caixa de diálogo o usuário poderá selecionar arquivos de um determinado diretórios.
   * Opções específicas:
-    * -multiple: Possibilita a seleção de vários arquivos na caixa de diálogo;
-    * -directory: Possibilita APENAS a seleção de diretórios na caixa de diálogo
-    * -file-filter="filtro": Possibilita realizar um filtro dos arquivos que irão aparecer na caixa de diálogo;
-    * -filename="NOME": Mostra o nome do arquivo a ser selecionado na caixa de diálogo;
+    * --multiple: Possibilita a seleção de vários arquivos na caixa de diálogo;
+    * --directory: Possibilita APENAS a seleção de diretórios na caixa de diálogo
+    * --file-filter="filtro": Possibilita realizar um filtro dos arquivos que irão aparecer na caixa de diálogo;
+    * --filename="NOME": Mostra o nome do arquivo a ser selecionado na caixa de diálogo;
 * **--forms**
   * Cria um formulário.
   * Opções específicas:
