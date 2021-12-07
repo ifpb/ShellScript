@@ -37,7 +37,7 @@
   * Opções específicas:
     * --column="Nome da coluna": Cria uma nova coluna para a lista
     * --print-column="Número da coluna": Especifica qual coluna será retornada, por padrão APENAS a coluna 1 é retornada, pode ser utilizado o "ALL" para que sejam retornadas todas as colunas.
-* **--notification-icon**
+* **--notification**
   * Literalmente apenas um ícone de notificação, sem áreas clicáveis.
 * Message (que é dividida em: Error, Information, Question e Warning)
   * As mensagens --erro, --informação e --warning darão apenas a opção "OK";
