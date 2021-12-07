@@ -1,0 +1,1 @@
+* Crie um script com interface gráfica com um formulário com as seguintes entradas: Nome, Sobrenome, Idade, Matrícula, CPF e Telefone.

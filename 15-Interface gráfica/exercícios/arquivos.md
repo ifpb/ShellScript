@@ -1,0 +1,1 @@
+* Crie um script com interface gráfica que salve em uma variável o caminho de **MÚLTIPLOS** arquivos selecionados pelo usuário.
