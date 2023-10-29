@@ -122,3 +122,7 @@ case $t in
         *) echo "Não reconheço a tecla digitada..." ;;
 esac
 ```
+
+# Videoaula(s)
+
+* Comando IF: https://youtu.be/pxt-PFzgHOw?list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M

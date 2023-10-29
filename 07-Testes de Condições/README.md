@@ -100,3 +100,9 @@
     * (( $(bc <<<"3.1 > 3") == 1 )) && echo OK
     * [ $(bc <<<"3.1 > 3") -eq 1 ] || echo FALHOU    
 
+
+# Videoaula(s)
+
+* Subistiuição aritmética: https://youtu.be/Y5HlZN2-yac
+* Comando test: https://youtu.be/pxt-PFzgHOw?list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&t=792
+* Comando bc: https://www.youtube.com/watch?v=Y5HlZN2-yac&t=670s

@@ -63,3 +63,8 @@ BEGIN { "condições e comandos a serem executados antes de iniciar a leitura do
 }
 END { "comandos a serem executados após a leitura do arquivo" }
 ```
+
+# Videoaula(s)
+
+* AWK: https://youtu.be/mTlx7Cz7y2I?list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M
+

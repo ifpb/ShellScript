@@ -95,3 +95,9 @@ until (( $(cat arquivo | wc -l) == 10 )); do
 done
 
 ```
+
+# Videoaula(s)
+
+* Laço For: https://youtu.be/nWePERqMD4A?feature=shared
+* Laço while: https://youtu.be/26Xp-eiujqk?feature=shared
+

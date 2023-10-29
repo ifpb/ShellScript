@@ -49,3 +49,6 @@ Neste curso, vamos focar duas delas: $(()) e bc.
     * declare
         * declare -i n; n=6/3; echo $n
 
+# Videoaula(s)
+
+* Aritmética no Bash: https://youtu.be/Y5HlZN2-yac?si=2h8RDYZDyCscrFsF
