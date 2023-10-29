@@ -40,3 +40,8 @@
     * $# (Número de argumentos passados pela linha de comando)
     * $$ (Número do processo em execução)
     * $! (Número do último comando executado)
+
+# Videoaula(s)
+
+* Aspas: https://www.youtube.com/watch?v=5_6Vu3Z3X_w&list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&index=2&t=581s
+* Argumentos de linha de comando: https://www.youtube.com/watch?v=k8aS8CwmWKA&list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&index=3&t=156s

@@ -36,4 +36,7 @@
         * echo "Estamos no dia ${DIA} de ${MES} do ano de ${ANO}."
         * ARQUIVOS="$(ls)"
     
+# Videoaula(s)
 
+* Comando date: https://www.youtube.com/watch?v=5_6Vu3Z3X_w&list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&index=1&t=998s
+* Substituição de shell: https://www.youtube.com/watch?v=5_6Vu3Z3X_w&list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&index=1&t=1122s

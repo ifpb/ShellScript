@@ -30,3 +30,8 @@ echo "Bem-vindo ao Linux! Só o Linux é Linux" | sed 's/Linux/Windows/'
 ```bash
 sed '1,10 d' ips.txt
 ```
+
+# Videoaula(s)
+
+* Comando SED: https://youtu.be/JaJny67jrqY?list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M
+

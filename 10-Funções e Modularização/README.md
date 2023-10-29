@@ -107,3 +107,9 @@ source f.sh  # Importa o script f.sh (executa-o aqui, linha por linha)
 xyz
 
 ```
+
+# Videoaula(s)
+
+* Funções: https://youtu.be/Z8xaBRijiTw?feature=shared
+* Modularização: https://youtu.be/Z8xaBRijiTw?list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&t=405
+
