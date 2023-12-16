@@ -149,3 +149,8 @@ echo ${texto:3:10}
 echo ${texto:3:11}
 echo ${texto:3:15}
 ```
+
+# Videoaula(s):
+
+* Arrays e Strings: https://youtu.be/iV2AN-5vJrI?list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M
+

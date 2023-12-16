@@ -59,3 +59,12 @@
         * Usado como um condicional: O comando seguinte apenas é executado caso o primeiro falhe.
         * I.e.: caso o primeiro comando tenha um código de retorno diferente de 0.
         * Ex.: mkdir teste || echo 'Não foi possível criar o diretório "teste"'
+
+
+# Videoaula(s)
+
+
+* Redirecionadores: https://youtu.be/zdDGwOCPJNY?si=Qzq9_sxWLcqgLCJh
+* Conectores: 	(pipe) https://www.youtube.com/watch?v=zdDGwOCPJNY&t=1389s
+		(and e or) https://youtu.be/z1pfp61JxtY?si=0VO3QK46aTSqw3GD
+

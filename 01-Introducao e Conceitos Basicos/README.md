@@ -15,3 +15,8 @@
 * a=10
 * echo $a
 * echo ${a}
+
+# Videoaula(s)
+
+* Conceitos Básicos:  https://youtu.be/5_6Vu3Z3X_w?si=JWFKdUoVFL0UusWw
+

@@ -19,3 +19,7 @@
     * $1 $2 $3 $4 $5 $6 $7 ...
     * $*
     * $0
+
+# Videoaula(s)
+
+* Variáveis: https://www.youtube.com/watch?v=5_6Vu3Z3X_w&list=PLlfnoloSCPI2yAhYzUXE6V8-8DNC5nk0M&index=2&t=288s
